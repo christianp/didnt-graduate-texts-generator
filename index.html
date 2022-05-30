@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!--
-      This is the page head - it contains info the browser uses to display the page
-      You won't see what's in the head in the page
-      Scroll down to the body element for the page content
-    -->
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Didn't graduate texts in mathematics</title>
 
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
-    <title>Didn't graduate texts in mathematics</title>
-
-    <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- Import the webpage's javascript file -->
-    <script src="/script.mjs" type="module"></script>
-  </head>
-  <body>
-    <main>
-      <a id="link" download><canvas width="527" height="799" id="canvas"></canvas></a>
-      <textarea id="title">That Nonsense
-With All The Arrows</textarea>
-    </main>
-    <footer>
-      <p>
-        Made by <a href="https://somethingorotherwhatever.com">clp</a>
-      </p>
-    </footer>
-    <div id="images">
-      <img id="template" src="https://cdn.glitch.global/93124e5e-e062-480f-afec-f591070fc470/didn%20t%20graduate%20template.png?v=1652685585594" style="display:none">
-    </div>
-  </body>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.mjs" type="module"></script>
+    </head>
+    <body>
+        <main>
+            <section id="output">
+                <a id="download" download><canvas width="527" height="799" id="canvas"></canvas></a>
+                <p id="description"></p>
+            </section>
+            <section id="controls">
+                <label for="author">Author</label>
+                <input id="author" value="Sandy McLane?">
+                <label for="title">Title</label>
+                <textarea id="title">When All The Arrows
+                    Mean It's Obvious</textarea>
+                <label for="illustration">Illustration</label>
+                <select id="illustration">
+                    <option value="">None</option>
+                </select>
+            </section>
+        </main>
+        <footer>
+            <p>
+            Made by <a href="https://somethingorotherwhatever.com">clp</a>
+            </p>
+        </footer>
+        <div id="images">
+            <img id="template" src="images/template.png" style="display:none">
+        </div>
+    </body>
 </html>
